@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://help.dropsuite.com/hc/en-us/articles/20422080552855-15-API-Settings
+docs: https://help.dropsuite.com/hc/en-us/articles/20422080552855-15-API-Settings
+notes: >-
+  Dropsuite (now NinjaOne SaaS Backup) exposes a partner REST API whose credentials
+  are provisioned per-partner from the Partner Portal under Settings -> API Settings.
+  API access is gated to Direct Partners / Distributors. No public OpenAPI or open
+  self-service credentials are published; the API URL is partner-specific. Auth is
+  token-based using two tokens issued in the portal (Reseller Token + Authentication
+  Token) alongside the partner API URL. Exact header/parameter names are documented
+  inside the partner-gated help center and are not reproduced here (no fabrication).
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - unknown
+  oauth2_flows: []
+  access: partner-gated
+schemes:
+- name: ResellerToken
+  type: apiKey
+  description: Partner reseller token issued in the Partner Portal (Settings -> API Settings).
+  sources:
+  - docs
+- name: AuthenticationToken
+  type: apiKey
+  description: Authentication token issued in the Partner Portal (Settings -> API Settings).
+  sources:
+  - docs
+references:
+- https://help.dropsuite.com/hc/en-us/articles/38775854335895-API-Authentication-for-Rewst-Integration
+- https://help.dropsuite.com/hc/en-us/articles/16883894866587
