@@ -1,19 +1,50 @@
 aid: dropsuite
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dropsuite.png
 name: Dropsuite
-description: Dropsuite is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Dropsuite, now a NinjaOne company, is a cloud backup, archiving, and recovery
+  platform built for managed service providers (MSPs) and their small-to-midsize
+  business customers. It provides automated backup and one-click restore for
+  Microsoft 365, Microsoft Entra ID, Google Workspace, email, and website/database
+  data, plus long-term email archiving with legal hold, eDiscovery, and journaling
+  for compliance. Partners manage tenants through a multi-tenant portal and can
+  automate provisioning, reporting, and reconciliation through a partner REST API
+  gated to Direct Partners and Distributors (credentials issued in the Partner
+  Portal under Settings -> API Settings). Dropsuite was surfaced as a portfolio
+  company of 500 Global and profiled in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/dropsuite/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cloud Backup
+- Data Protection
+- Email Archiving
+- Microsoft 365
+- Google Workspace
+- MSP
+- Compliance
+- eDiscovery
+- Disaster Recovery
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,26 @@ maintainers:
 common:
 - type: Website
   url: https://dropsuite.com
+- type: Documentation
+  url: https://help.dropsuite.com/hc/en-us
+- type: Support
+  url: https://help.dropsuite.com/hc/en-us
+- type: APIReference
+  url: https://help.dropsuite.com/hc/en-us/articles/20422080552855-15-API-Settings
+- type: Blog
+  url: https://dropsuite.com/blog/
+- type: PrivacyPolicy
+  url: https://dropsuite.com/privacy-policy/
+- type: TermsOfService
+  url: https://dropsuite.com/terms/
+- type: Authentication
+  url: authentication/dropsuite-authentication.yml
+- type: DomainSecurity
+  url: security/dropsuite-domain-security.yml
+- type: LLMsTxt
+  url: llms/dropsuite-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
