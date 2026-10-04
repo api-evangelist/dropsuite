@@ -51,7 +51,7 @@ tags:
 - Cloud Backup
 - Data Protection
 - Email Archiving
-- Microsoft-365
+- Microsoft 365
 - Google Workspace
 - MSP
 - Compliance
@@ -68,6 +68,7 @@ tags_raw:
 - Compliance
 - eDiscovery
 - Disaster Recovery
+- Microsoft-365
 apis: []
 maintainers:
 - FN: Kin Lane
